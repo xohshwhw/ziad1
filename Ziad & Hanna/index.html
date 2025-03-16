@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ziad the gay dad</title>
+    <link rel="stylesheet" href="ziad.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="wc">Welcome to our quiz</h1>
+        <h1 id="wc1">Do you think ziad is gay?</h1>
+        
+         
+        <img src="https://scontent.fbey14-1.fna.fbcdn.net/v/t1.6435-9/84899803_1262159680839590_7719448281352241152_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=seneDYY40kMQ7kNvgEz-RQa&_nc_oc=AdimE0VGm3gtz_Q82uH6_WUnHoybFJ4-vrXiHlPO-KPUA3ZObCR0_vjkxuLhHDw2QSA&_nc_zt=23&_nc_ht=scontent.fbey14-1.fna&_nc_gid=bbO2k2wIEIkhmA4DYSqUXQ&oh=00_AYFR3hIcBj2yRJtleLCNfgPEJDCjvCcRh3m232chvz_5FA&oe=67FE8030" alt="Icon" class="icon">
+       
+       <div class="buttons" id="container">
+            <button id="yesButton">Yes</button>
+            <button id="noButton" >No</button>
+            
+        </div>
+        <p id="message"></p>
+   
+    </div>
+    <script>
+   function moveButton() {
+      const container = document.getElementById('container');
+      const button = document.getElementById('noButton');
+
+      // Get the container's dimensions
+      const containerWidth = container.clientWidth;
+      const containerHeight = container.clientHeight;
+
+      // Get the button's dimensions
+      const buttonWidth = button.offsetWidth;
+      const buttonHeight = button.offsetHeight;
+
+      // Calculate random position within container bounds, ensuring button stays inside
+      const maxX = containerWidth - buttonWidth;
+      const maxY = containerHeight - buttonHeight;
+
+      const x = Math.random() * maxX; // Random X within the container
+      const y = Math.random() * maxY; // Random Y within the container
+
+      // Move the button to the new position
+      button.style.left = `${x}px`;
+      button.style.top = `${y}px`;
+    }
+
+    // Add an event listener to move the button when clicked
+    document.getElementById('noButton').addEventListener('click', moveButton);
+    
+
+
+
+    document.addEventListener('DOMContentLoaded', function() {
+            // Get the button element by its ID
+            const yesButton = document.getElementById('yesButton');
+
+            // Add an event listener to the button
+            yesButton.addEventListener('click', function() {
+                // Print "yes" to the browser console when the button is clicked
+                alert('2no ma3roufe ziad gay'); // This will show an alert with "yes" instead of console.log
+            });
+        });
+
+
+
+    </script>
+  
+</body>
+</html>

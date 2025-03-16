@@ -1,0 +1,80 @@
+body{
+    background-image: url("https://th.bing.com/th/id/R.4cbf2692f8a4b9ad60937fae26733f87?rik=Bn7WEqktRde6IQ&pid=ImgRaw&r=0");
+    margin: 0;
+    scroll-behavior: smooth;
+}
+.container {
+
+    background-color: rgba(0, 0, 0, 0.5);
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    scroll-behavior: smooth;
+    position: fixed;
+    
+}
+/* #c{
+   position: fixed;
+   top: 50%;
+   right: 50%;
+   transform: translate(-50%, -50%);
+   border: 2px solid black;
+    
+} */
+.buttons{
+   display: flex;
+   flex-direction: row;
+   column-gap: 20px;
+   position: fixed;
+   bottom: 20%;
+   right: 40%;
+   transform: translate(40%, -20%);
+    padding-top: 200px ;
+    padding-right: 100px;
+    
+   
+  
+
+}
+.buttons *{
+    color: rgb(0, 0, 0);
+    font-family: century;
+    background-color: whitesmoke;
+    border: none;
+    box-shadow: 0 0 10px white;
+    padding: 15px;
+    position: relative;
+    
+
+}
+h1{
+    color: rgb(217, 210, 210);
+    font-family: century;
+    text-shadow: 0 0 10px white;
+}
+#wc{
+    white-space: nowrap;
+    position: fixed;
+    right: 50%;
+    transform: translate(50%);
+
+}
+#wc1{
+    white-space: nowrap;
+    position: fixed;
+    right: 50%;
+    transform: translate(50%);
+    margin-top: 15%;
+}
+.icon{
+    position: fixed;
+    border-radius: 50%;
+    position: fixed;
+    height: 200px;
+    width: 200px;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    
+    
+}
